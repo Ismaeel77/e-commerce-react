@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 function Cart() {
 
   let [cartDetails, setCartDetails] = useState(null)
+  let [ cartId , setCartId] = useState('')
   let { getProductsFromCart, removeCartItem, updateCartItem,setCart } = useContext(CartContext)
   
   async function displayCart() {
     let response = await getProductsFromCart()
-    setCartDetails(response.data)
+    setCartDetails(response?.data)
+    setCartId(response?.data?.cartId)
     console.log(response);
     console.log(response.data.numOfCartItems);
     console.log(response.data.cartId);
-    
   }
 
   async function removeItem(productId) {
@@ -100,10 +101,11 @@ function Cart() {
             </tbody>
           </table>
         </div>
-        <Link to={`/checkout`}>
+
+        <Link to={`/checkout/${cartId}`}>
           <button
             type="button"
-            className=" text-white block mt-5 mx-auto cursor-pointer rounded-md bg-indigo-500 box-border border border-indigo-500 hover:bg-indigo-700 shadow-xs font-medium px-4 py-2.5 focus:outline-none transition-colors"
+            className="text-white block mt-5 mx-auto cursor-pointer rounded-md bg-indigo-500 border border-indigo-500 hover:bg-indigo-700 shadow-xs font-medium px-4 py-2.5 focus:outline-none transition-colors"
           >
             Checkout Now
           </button>

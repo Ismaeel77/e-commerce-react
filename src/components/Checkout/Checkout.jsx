@@ -1,16 +1,18 @@
 import { useContext, useEffect } from "react";
 import { useFormik } from "formik";
 import { CartContext } from "../../Context/CartContext";
+import { useParams } from "react-router-dom";
 
 function Checkout() {
   let { checkout } = useContext(CartContext)
-
+  let {id} = useParams()
   async function handleCheckout(cartId,url) {
     let { data } = await checkout(cartId,url,formik.values);
     console.log(data);
+    console.log(id);
     if ( data.status === 'success') {
       // eslint-disable-next-line react-hooks/immutability
-      window.location.href = data.session.url
+      // window.location.href = data.session.url
     }
     
   }
@@ -21,7 +23,7 @@ function Checkout() {
       phone:'',
       city:''
     },
-    onSubmit: () => handleCheckout('694ac39b658f1781c7609b80','http://localhost:5173')
+    onSubmit: () => handleCheckout(id,`https://mycart-ecommerce-react.vercel.app/`)
   })
   useEffect(() => {}, []);
 

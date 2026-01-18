@@ -29,7 +29,7 @@ let routes = createBrowserRouter([
       { path: "productdetails/:id/:category", element:<ProtectedRoute><ProductDetails /></ProtectedRoute>},
       { path: "brands", element:<ProtectedRoute><Brands /></ProtectedRoute>},
       { path: "cart", element:<ProtectedRoute><Cart /></ProtectedRoute>},
-      { path: "checkout", element:<ProtectedRoute><Checkout /></ProtectedRoute>},
+      { path: "checkout/:id", element:<ProtectedRoute><Checkout /></ProtectedRoute>},
       { path: "allorders", element:<ProtectedRoute><AllOrders /></ProtectedRoute>},
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
