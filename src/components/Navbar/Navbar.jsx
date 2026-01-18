@@ -23,7 +23,7 @@ function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="./src/assets/logo.png"
+              src="../../assets/logo.png"
               alt="Logo"
               className="h-8 w-auto"
             />
