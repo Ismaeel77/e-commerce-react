@@ -12,7 +12,7 @@ function Checkout() {
     console.log(id);
     if ( data.status === 'success') {
       // eslint-disable-next-line react-hooks/immutability
-      // window.location.href = data.session.url
+      window.location.href = data.session.url
     }
     
   }
