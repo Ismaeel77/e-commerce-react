@@ -31,18 +31,18 @@ function Footer() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <p className="font-medium">Payment Partners</p>
               <div className="flex flex-wrap gap-3">
-                <img className="h-10 object-contain" src="/src/assets/amazon-pay.png" />
-                <img className="h-10 object-contain" src="/src/assets/american-express.png" />
-                <img className="h-10 object-contain" src="/src/assets/mastercard.png" />
-                <img className="h-10 object-contain" src="/src/assets/paypal.png" />
+                <img className="h-10 object-contain" src="../../assets/amazon-pay.png" />
+                <img className="h-10 object-contain" src="../../assets/american-express.png" />
+                <img className="h-10 object-contain" src="../../assets/mastercard.png" />
+                <img className="h-10 object-contain" src="../../assets/paypal.png" />
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <p className="font-medium">Get deliveries with ecommerce</p>
               <div className="flex gap-3">
-                <img className="w-28 object-contain" src="/src/assets/appstore.svg" />
-                <img className="w-28 object-contain" src="/src/assets/googleplay.png" />
+                <img className="w-28 object-contain" src="../../assets/appstore.svg" />
+                <img className="w-28 object-contain" src="../../assets/googleplay.png" />
               </div>
             </div>
 
