@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.active {
+  @apply text-white bg-gray-800;
+}
+
+.row {
+  @apply flex flex-wrap mx-4 py-4 items-center;
+}
+
+.btn {
+  opacity: 0;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  -o-transform: translateY(30px);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.product-container:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+
+.img-container {
+  height: 12.5rem;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
