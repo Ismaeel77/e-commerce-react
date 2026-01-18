@@ -1,3 +1,9 @@
+import AmazonPay from '../../assets/amazon-pay.png';
+import AmericanExpress from '../../assets/american-express.png';
+import Mastercard from '../../assets/mastercard.png';
+import Paypal from '../../assets/paypal.png';
+import Appstore from '../../assets/appstore.svg';
+import Googleplay from '../../assets/googleplay.png'
 function Footer() {
 
   return (
@@ -19,7 +25,7 @@ function Footer() {
           />
           <button
             type="button"
-            className="bg-indigo-500 text-white py-3 px-5 rounded-md"
+            className="bg-indigo-500 text-white py-3 px-5 rounded-md cursor-pointer"
           >
             Share App Link
           </button>
@@ -31,18 +37,18 @@ function Footer() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <p className="font-medium">Payment Partners</p>
               <div className="flex flex-wrap gap-3">
-                <img className="h-10 object-contain" src="assets/amazon-pay.png" />
-                <img className="h-10 object-contain" src="assets/american-express.png" />
-                <img className="h-10 object-contain" src="assets/mastercard.png" />
-                <img className="h-10 object-contain" src="assets/paypal.png" />
+                <img className="h-10 object-contain" src={AmazonPay} alt='AmazonPay photo'/>
+                <img className="h-10 object-contain" src={AmericanExpress} alt='AmericanExpress photo'/>
+                <img className="h-10 object-contain" src={Mastercard} alt='Mastercard photo'/>
+                <img className="h-10 object-contain" src={Paypal} alt='Paypal photo'/>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <p className="font-medium">Get deliveries with ecommerce</p>
               <div className="flex gap-3">
-                <img className="w-28 object-contain" src="assets/appstore.svg" />
-                <img className="w-28 object-contain" src="assets/googleplay.png" />
+                <img className="w-28 object-contain" src={Appstore} alt='Appstore photo'/>
+                <img className="w-28 object-contain" src={Googleplay} alt='Googleplay photo'/>
               </div>
             </div>
 

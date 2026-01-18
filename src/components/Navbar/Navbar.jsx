@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { UserContext } from "../../Context/UserContext";
 import { CartContext } from "../../Context/CartContext";
+import Logo from '../../assets/logo.png'
 
 function Navbar() {
   let {userLogin, setUserLogin} = useContext(UserContext)
@@ -23,7 +24,7 @@ function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="assets/logo.png"
+              src={Logo}
               alt="Logo"
               className="h-8 w-auto"
             />
