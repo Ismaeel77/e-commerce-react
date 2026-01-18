@@ -23,7 +23,7 @@ function Checkout() {
       phone:'',
       city:''
     },
-    onSubmit: () => handleCheckout(id,`https://mycart-ecommerce-react.vercel.app/`)
+    onSubmit: () => handleCheckout(id,`https://mycart-ecommerce-react.vercel.app/allorders`)
   })
   useEffect(() => {}, []);
 
