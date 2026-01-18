@@ -23,7 +23,7 @@ function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/src/assets/logo.png"
+              src="./src/assets/logo.png"
               alt="Logo"
               className="h-8 w-auto"
             />
@@ -52,8 +52,8 @@ function Navbar() {
               </button>
             ) : (
               <>
-                <NavLink className="nav-link" to="/login">Login</NavLink>
-                <NavLink className="nav-link" to="/register">Register</NavLink>
+                <NavLink className="nav-link py-2 rounded" to="/login">Login</NavLink>
+                <NavLink className="nav-link py-2 rounded" to="/register">Register</NavLink>
               </>
             )}
 
